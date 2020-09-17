@@ -9,9 +9,12 @@ pipeline {
             stage('Stage 2') {
                 steps {
                     sh 'java -version'
+                    sh 'javac HelloWorld.java'
+                    sh 'java HelloWorld'
+                    sh 'java -version'
                 }
             }
-    }    
+        }    
     options {
         buildDiscarder(logRotator(numToKeepStr: '3'))
         }
