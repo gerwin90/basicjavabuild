@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-            stage('WS Clean-Up') {
+            stage('Stage 1') {
                 steps {
-                    bat 'git clean -fdx'
+                    echo 'Running on Jenkins Docker with Github Repo'
                 }
             }
     }    
