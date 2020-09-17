@@ -6,6 +6,11 @@ pipeline {
                     echo 'Running on Jenkins Docker with Github Repo using VS Code Jenkins Runner'
                 }
             }
+            stage('Stage 2') {
+                steps {
+                    sh 'java -version'
+                }
+            }
     }    
     options {
         buildDiscarder(logRotator(numToKeepStr: '3'))
