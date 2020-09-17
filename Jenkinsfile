@@ -3,7 +3,7 @@ pipeline {
     stages {
             stage('Stage 1') {
                 steps {
-                    echo 'Running on Jenkins Docker with Github Repo'
+                    echo 'Running on Jenkins Docker with Github Repo using VS Code Jenkins Runner'
                 }
             }
     }    
