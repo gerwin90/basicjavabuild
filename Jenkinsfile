@@ -11,6 +11,7 @@ pipeline {
                     sh 'java -version'
                     sh 'javac HelloWorld.java'
                     sh 'java HelloWorld'
+                    sh 'java -version'
                 }
             }
         }    
